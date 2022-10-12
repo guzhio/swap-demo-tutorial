@@ -92,7 +92,7 @@ async function getPrice(){
         buyToken: currentTrade.to.address,
         sellAmount: amount,
     }
-  
+   
     // Fetch the swap price.
     const response = await fetch(`https://api.0x.org/swap/v1/price?${qs.stringify(params)}`);
     
